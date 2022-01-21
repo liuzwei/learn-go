@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"learn-go/test1"
-	_ "learn-go/test1"
+	//_ "learn-go/test1"
 )
 
 // 主入口函数
