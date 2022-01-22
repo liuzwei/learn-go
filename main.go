@@ -32,6 +32,31 @@ func main() {
 
 // 切片相关测试
 func sliceTest() {
+	// 声明一个10个长度的数组，并初始化
+	var originArray [10]int
+	for i := 0; i < len(originArray); i++ {
+		originArray[i] = i + 1
+	}
+
+	// 获得一个切片
+	slice1 := originArray[5:]
+	slice2 := slice1[:]
+	fmt.Printf("slice1 is %v \n", slice1)
+	fmt.Printf("slice2 is %v \n", slice2)
+	// 修改originArray数组，看slice1是否变化
+	originArray[5] = 0
+	fmt.Printf("change ? slice1 is %v \n", slice1)
+	fmt.Printf("change ? slice2 is %v \n", slice2)
+	// slice1追加一个元素,append操作会导致底层数组变化，发生数组的拷贝
+	slice3 := append(slice1, 100)
+	fmt.Printf("slice3 is %v \n", slice3)
+	fmt.Printf("apeend ? slice1 is %v \n", slice1)
+	originArray[5] = 6
+	fmt.Printf("change ? slice3 is %v \n", slice3)
+	fmt.Printf("change ? slice1 is %v \n", slice1)
+
+	var slice4 []int = make([]int, 10)
+	fmt.Printf("slice4 is %v \n", slice4)
 
 }
 
