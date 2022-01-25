@@ -28,6 +28,42 @@ func main() {
 	testArray()
 	//切片相关
 	sliceTest()
+
+	// 数组指针
+	ptrArray()
+	// 切片拷贝
+	copySlice()
+}
+
+// 切片拷贝
+func copySlice() {
+	var a = []int{1, 2, 4}
+	var s = make([]int, 6)
+	copy(s, a)
+	fmt.Printf("a array %v, type:%T, cap:%d, len:%d \n", a, a, cap(a), len(a))
+	fmt.Printf("s slice %v, type:%T, cap:%d, len:%d \n", s, s, cap(s), len(s))
+}
+
+// 测试数组是值传递还是引用传递
+func ptrArray() {
+	a := [...]int{1, 2, 4}
+	fmt.Printf("数组a，指针地址【%p】,数组信息：%v \n", &a, a)
+
+	//printArray(a)
+	printArrayQuote(&a)
+}
+func printArrayQuote(b *[3]int) {
+	fmt.Printf("数组b，指针地址【%p】,数组信息：%v \n", b, *b)
+	c := b
+	fmt.Printf("数组c，指针地址【%p】,数组信息：%v \n", c, *c)
+	var slice []int
+	slice = append(slice, 1, 2, 4)
+}
+
+func printArray(a [3]int) {
+	fmt.Printf("数组b，指针地址【%p】,数组信息：%v \n", &a, a)
+	c := a
+	fmt.Printf("数组c，指针地址【%p】,数组信息：%v \n", &c, c)
 }
 
 // 切片相关测试
