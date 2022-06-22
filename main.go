@@ -2,12 +2,27 @@ package main
 
 import (
 	"fmt"
+
+	"godkits/gox/stringsx"
 	"learn-go/test1"
-	//_ "learn-go/test1"
 )
 
-// 主入口函数
 func main() {
+	//test1.PrintIntAddress()
+	//test1.PrintStringAddress()
+	var builder = stringsx.Builder{}
+	builder.JoinByte(stringsx.ToBytes("abs")...)
+	num, er := builder.JoinString("ABC")
+	fmt.Println("插入数量", num)
+	if er == nil {
+		fmt.Println("没有错误")
+	}
+	fmt.Println(builder.String())
+
+}
+
+// 主入口函数
+func main2() {
 	fmt.Println("2.主函数")
 	// # command-line-arguments
 	//.\main.go:11:2: undefined: test1
@@ -33,6 +48,7 @@ func main() {
 	ptrArray()
 	// 切片拷贝
 	copySlice()
+
 }
 
 // 切片拷贝
