@@ -18,6 +18,10 @@ func main() {
 		fmt.Println("没有错误")
 	}
 	fmt.Println(builder.String())
+
+	fmt.Printf("test git rebase, test print")
+
+	fmt.Println(1 + 2)
 }
 
 // 主入口函数
@@ -47,6 +51,10 @@ func main2() {
 	ptrArray()
 	// 切片拷贝
 	copySlice()
+
+	fmt.Println("this is print something")
+	fmt.Println("this is print something")
+
 }
 
 // 切片拷贝
