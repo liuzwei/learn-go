@@ -52,9 +52,6 @@ func main2() {
 	// 切片拷贝
 	copySlice()
 
-	fmt.Println("this is print something")
-	fmt.Println("this is print something")
-
 }
 
 // 切片拷贝
