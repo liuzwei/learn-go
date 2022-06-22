@@ -3,25 +3,15 @@ package main
 import (
 	"fmt"
 
-	"godkits/gox/stringsx"
+	"learn-go/algorithm"
 	"learn-go/test1"
 )
 
 func main() {
 	//test1.PrintIntAddress()
 	//test1.PrintStringAddress()
-	var builder = stringsx.Builder{}
-	builder.JoinByte(stringsx.ToBytes("abs")...)
-	num, er := builder.JoinString("ABC")
-	fmt.Println("插入数量", num)
-	if er == nil {
-		fmt.Println("没有错误")
-	}
-	fmt.Println(builder.String())
-
-	fmt.Printf("test git rebase, test print")
-
-	fmt.Println(1 + 2)
+	ary := []int{1, 2, -2147483648}
+	algorithm.ThirdMax(ary)
 }
 
 // 主入口函数
