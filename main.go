@@ -22,6 +22,10 @@ func main() {
 	fmt.Printf("test git rebase, test print")
 
 	fmt.Println(1 + 2)
+
+	fmt.Printf("add sth1")
+	fmt.Printf("add sth2")
+	fmt.Printf("add sth3")
 }
 
 // 主入口函数
