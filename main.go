@@ -19,6 +19,7 @@ func main() {
 	}
 	fmt.Println(builder.String())
 
+	fmt.Printf("test git rebase, test print")
 }
 
 // 主入口函数
