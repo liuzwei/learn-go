@@ -51,7 +51,6 @@ func main2() {
 	ptrArray()
 	// 切片拷贝
 	copySlice()
-
 }
 
 // 切片拷贝
