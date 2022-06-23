@@ -27,10 +27,16 @@ func main() {
 	d := Add(1, 2)
 	fmt.Println(d)
 
-	var shape = test1.Rectangle{A: 1.0, B: 2.0}
-	var shape2 = test1.Triangle{A: 3, B: 4, C: 5}
-	fmt.Println("shape perimeter ", shape.Perimeter(), "area is ", shape.Area())
+	var shape test1.Shape = test1.Rectangle{A: 1.0, B: 2.0}
+	rect, ok := shape.(test1.Rectangle)
+	if ok {
+		fmt.Println("shape perimeter ", rect.Perimeter(), "area is ", rect.Area())
+	} else {
+		fmt.Println("shape.(test1.Rectangle) not ok!")
+	}
+	var shape2 test1.Shape = test1.Triangle{A: 3, B: 4, C: 5}
 	fmt.Println("shape2 perimeter ", shape2.Perimeter(), "area is ", shape2.Area())
+
 }
 
 // 主入口函数
@@ -39,6 +45,7 @@ func main2() {
 	// # command-line-arguments
 	//.\main.go:11:2: undefined: test1
 	//test1.SayHello()
+	//var s int = int(math.Max(10, 30))
 
 	// 声明变量
 	var name string
