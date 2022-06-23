@@ -7,11 +7,30 @@ import (
 	"learn-go/test1"
 )
 
+// 声明一个加法函数
+var add = func(a int, b int) int {
+	return a + b
+}
+
+func Add(a int, b int) int {
+	return a + b
+}
+
 func main() {
 	//test1.PrintIntAddress()
 	//test1.PrintStringAddress()
 	ary := []int{1, 2, -2147483648}
 	algorithm.ThirdMax(ary)
+
+	c := add(1, 2)
+	fmt.Println(c)
+	d := Add(1, 2)
+	fmt.Println(d)
+
+	var shape = test1.Rectangle{A: 1.0, B: 2.0}
+	var shape2 = test1.Triangle{A: 3, B: 4, C: 5}
+	fmt.Println("shape perimeter ", shape.Perimeter(), "area is ", shape.Area())
+	fmt.Println("shape2 perimeter ", shape2.Perimeter(), "area is ", shape2.Area())
 }
 
 // 主入口函数
