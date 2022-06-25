@@ -17,6 +17,11 @@ func Add(a int, b int) int {
 }
 
 func main() {
+	nums := []int{3}
+	r := algorithm.RemoveElement(nums, 3)
+	fmt.Println(r)
+}
+func main3() {
 	//test1.PrintIntAddress()
 	//test1.PrintStringAddress()
 	ary := []int{1, 2, -2147483648}
@@ -37,6 +42,8 @@ func main() {
 	var shape2 test1.Shape = test1.Triangle{A: 3, B: 4, C: 5}
 	fmt.Println("shape2 perimeter ", shape2.Perimeter(), "area is ", shape2.Area())
 
+	table := map[int]int{}
+	table[1] = 0
 }
 
 // 主入口函数
