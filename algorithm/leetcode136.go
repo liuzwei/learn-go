@@ -14,6 +14,10 @@ package algorithm
 // 异或运算：有两个值a,b（值只能是0或1）  如果a，b值相同,异或结果为0，如果a,b值不同，异或结果为1
 // 根据异或运算的特点，所有值异或完，结果即为只出现一次的元素
 func SingleNumber(nums []int) int {
+	a := "hello"
+	b := "world"
+	a, b = b, a
+
 	result := 0
 	for _, item := range nums {
 		result ^= item
