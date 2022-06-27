@@ -41,3 +41,21 @@ func Goroutine() {
 		}
 	}
 }
+
+func SomeChan() {
+	var strChan chan string = make(chan string)
+	go receiveStr(strChan)
+	for i := 0; i < 10; i++ {
+		strChan <- fmt.Sprintf("hello chan %d", i)
+		time.Sleep(time.Second)
+	}
+	fmt.Println("send string success!")
+}
+
+func receiveStr(c chan string) {
+	for {
+		str := <-c
+		fmt.Println("接收字符串", str)
+	}
+
+}
