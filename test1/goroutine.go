@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"sync"
 	"time"
+
+	"godkits/log"
 )
 
 func hello(i int) {
@@ -55,7 +57,54 @@ func SomeChan() {
 func receiveStr(c chan string) {
 	for {
 		str := <-c
-		fmt.Println("接收字符串", str)
+		log.Info("receive string is '%s'", str)
+		log.Info(str)
 	}
 
+}
+
+func setZeroes(matrix [][]int) {
+	// 先找出为0的元素
+	zeros := [][]int{}
+	for i, ary := range matrix {
+		for j, item := range ary {
+			if item == 0 {
+				zeros = append(zeros, []int{i, j})
+			}
+		}
+	}
+	// 再重置为0
+	for _, ary := range zeros {
+		// 行置为0
+		for x, _ := range matrix[ary[0]] {
+			matrix[ary[0]][x] = 0
+		}
+		// 列置为0
+		for y, _ := range matrix[0] {
+			matrix[y][ary[1]] = 0
+		}
+	}
+}
+
+func longestCommonPrefix(strs []string) string {
+	minLength := len(strs[0])
+	for _, str := range strs {
+		if len(str) < minLength {
+			minLength = len(str)
+		}
+	}
+	if minLength == 0 {
+		return ""
+	}
+	result := ""
+	for i := 0; i < minLength; i++ {
+		temp := strs[0][i]
+		for _, str := range strs {
+			if temp != str[i] {
+				return result
+			}
+		}
+		result = result + string(temp)
+	}
+	return result
 }
