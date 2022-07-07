@@ -1,7 +1,7 @@
 package algorithm
 
 // FinalValueAfterOperations 执行操作后的变量值
-// @Params operations
+// @param operations
 func FinalValueAfterOperations(operations []string) int {
 	sum := 0
 	for _, op := range operations {
