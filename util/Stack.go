@@ -6,18 +6,18 @@ type Stack struct {
 	list *list.List
 }
 
-// 创建一个新的栈
+// NewStack 创建一个新的栈
 func NewStack() *Stack {
 	clist := list.New()
 	return &Stack{clist}
 }
 
-// 添加元素
+// Push 添加元素
 func (stack *Stack) Push(item interface{}) {
 	stack.list.PushBack(item)
 }
 
-// 弹出元素
+// Pop 弹出元素
 func (stack *Stack) Pop() interface{} {
 	element := stack.list.Back()
 	if element != nil {
