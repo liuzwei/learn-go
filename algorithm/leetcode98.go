@@ -1,5 +1,7 @@
 package algorithm
 
+import "learn-go/util"
+
 // 给你一个二叉树的根节点 root ，判断其是否是一个有效的二叉搜索树。
 //
 //有效 二叉搜索树定义如下：
@@ -16,11 +18,11 @@ package algorithm
 // 中序遍历二叉树，左--根--右  为有序，当当前节点<小于前一个节点则认为搜索二叉树无效
 
 // IsValidBST 是否有效二叉搜索树
-func IsValidBST(root *TreeNode) bool {
+func IsValidBST(root *util.TreeNode) bool {
 	// 颜色标记法
 	type ColorNode struct {
 		color int
-		node  *TreeNode
+		node  *util.TreeNode
 	}
 	stack := []ColorNode{
 		{0, root},

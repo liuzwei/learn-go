@@ -1,8 +1,12 @@
 package algorithm
 
-import "math"
+import (
+	"math"
 
-func MinDepth(root *TreeNode) int {
+	"learn-go/util"
+)
+
+func MinDepth(root *util.TreeNode) int {
 	if root == nil {
 		return 0
 	}

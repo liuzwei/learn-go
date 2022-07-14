@@ -1,6 +1,8 @@
 package algorithm
 
-func InorderTraversal(root *TreeNode) []int {
+import "learn-go/util"
+
+func InorderTraversal(root *util.TreeNode) []int {
 	// 递归
 	result := []int{}
 	if root == nil {
@@ -25,11 +27,11 @@ func InorderTraversal(root *TreeNode) []int {
 }
 
 // InorderTraversalColorTag 中序遍历，颜色标记法
-func InorderTraversalColorTag(root *TreeNode) []int {
+func InorderTraversalColorTag(root *util.TreeNode) []int {
 	type CustomNode struct {
 		// 0白色 1灰色
 		color int
-		node  *TreeNode
+		node  *util.TreeNode
 	}
 	stack := []CustomNode{
 		{
