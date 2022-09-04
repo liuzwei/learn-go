@@ -1,0 +1,29 @@
+### 解题思路
+
+此处撰写解题思路
+先排序，然后二分查找，如果是特殊数组，有且仅有一个特征值x,排序之后有x个数大于等于x。
+二分查找下标mid，在该位置往后有数组长度n-该位置下标mid个数。如果这几个数正好大于等于x，n-mid=x，并且mid-1的数小于x，那么这个x就是特征向量。
+如果个数比x多就向右查找，更新下限;如果只满足n-mid=x，但num[mid-1]>x就向左查找，更新上限。
+
+### 代码
+
+* python3
+
+```python3
+class Solution:
+    def specialArray(self, nums: List[int]) -> int:
+        n=len(nums)
+        nums.sort()
+        l,r=0,n
+        while l<r:
+            mid=(l+r)>>1
+            x=nums[mid-1] if mid>0 else -1
+            if x<n-mid<=nums[mid]:
+                return n-mid
+            elif n-mid>nums[mid]:
+                l=mid+1
+            else:
+                r=mid
+        return -1
+```
+

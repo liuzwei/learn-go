@@ -1,0 +1,78 @@
+### 题解1：
+
+因为nums.length最大为100，所以我们尝试暴力破解。
+
+* python
+
+```python
+from typing import List
+
+
+class Solution:
+    def specialArray(self, nums: List[int]) -> int:
+        for i in range(0, 101):
+            num = 0
+            for j in nums:
+                if j >= i:
+                    num = num + 1
+            if num == i:
+                return i
+        return -1
+
+
+if __name__ == '__main__':
+    nums = [0, 0]
+    print(Solution().specialArray(nums))
+```
+
+执行用时：48 ms, 在所有 Python3 提交中击败了14.04%的用户
+
+内存消耗：14.8 MB, 在所有 Python3 提交中击败了89.07%的用户
+
+通过测试用例：98 / 98
+
+时间复杂度为O(n^2)
+
+### 题解2：
+
+关键在于：nums中有x个大于等于x的数，那么x就为特征值，即如果特征值存在，则x的范围为0到len(num)。
+
+可以先对nums进行降序排序，然后判断nums[i]>=i+1>nums[i+1]是否存在，然后返回i+1（下标+1，即特征值）。
+
+例如:
+
+* 
+
+```
+nums=[4,4,3,0,0]
+第3个数>=3,第4个数<4(这里要判断i+1是否存在)
+```
+
+代码如下：
+
+* python
+
+```python
+class Solution:
+    def specialArray(self, nums: List[int]) -> int:
+    	# 降序排序
+        nums.sort(reverse=True)
+        
+        for i in range(len(nums)):
+            # 如果是最后一个
+            if i + 1 == len(nums) and nums[i] >= i+1:
+                return i + 1
+            # 否则应该为
+            elif nums[i] >= i + 1 and nums[i + 1] < i + 1:
+                return i + 1
+        return -1
+```
+
+执行用时：36 ms, 在所有 Python3 提交中击败了78.26%的用户
+
+内存消耗：14.9 MB, 在所有 Python3 提交中击败了40.25%的用户
+
+通过测试用例：98 / 98
+
+时间复杂度为O(nlogn0)
+
