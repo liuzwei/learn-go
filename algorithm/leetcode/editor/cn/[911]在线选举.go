@@ -4,7 +4,7 @@ package cn
 type TopVotedCandidate struct {
 }
 
-func Constructor(persons []int, times []int) TopVotedCandidate {
+func Constructor2(persons []int, times []int) TopVotedCandidate {
 
 	return TopVotedCandidate{}
 }
