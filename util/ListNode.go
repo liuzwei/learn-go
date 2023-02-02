@@ -1,5 +1,10 @@
 package util
 
+import (
+	"strconv"
+	"strings"
+)
+
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -17,4 +22,16 @@ func ListNodeInstance(nums []int) *ListNode {
 		currNode = &tempNode
 	}
 	return &listNode
+}
+
+func (head *ListNode) toString() string {
+	var builder = strings.Builder{}
+	builder.WriteString("[")
+	for head != nil {
+		builder.WriteString(strconv.Itoa(head.Val))
+		builder.WriteString(" ")
+		head = head.Next
+	}
+	builder.WriteString("]")
+	return builder.String()
 }
