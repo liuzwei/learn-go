@@ -21,6 +21,7 @@ func ReverseN(head *ListNode, n int) *ListNode {
 		subNode = head.Next
 		return head
 	}
+	// 1 -> 2 -> 3 -> 4 -> 5
 	last := ReverseN(head.Next, n-1)
 	head.Next.Next = head
 	// 将剩下的节点接到反转后的节点后面
