@@ -8,13 +8,13 @@ package cn
  *     Next *ListNode
  * }
  */
-func deleteDuplicates(head *ListNode) *ListNode {
+func deleteDuplicates2(head *ListNode) *ListNode {
 	dummy := &ListNode{Val: 0, Next: head}
 	tail := dummy.Next
-	for tail != nil{
+	for tail != nil {
 		if tail.Next != nil && tail.Val == tail.Next.Val {
 			tail.Next = tail.Next.Next
-		}else {
+		} else {
 			tail = tail.Next
 		}
 	}
