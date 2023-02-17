@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"sync"
 	"time"
-
-	"godkits/log"
 )
 
 func hello(i int) {
@@ -55,11 +53,6 @@ func SomeChan() {
 }
 
 func receiveStr(c chan string) {
-	for {
-		str := <-c
-		log.Info("receive string is '%s'", str)
-		log.Info(str)
-	}
 
 }
 
