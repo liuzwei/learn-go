@@ -6,14 +6,15 @@ func fib(n int) int {
 		return 0
 	}
 	// 保存一个计算表
-	dp := make([]int, n+1)
-	dp[0] = 0
-	dp[1] = 1
+	//dp := make([]int, n+1)
+	dp0 := 0
+	dp1 := 1
 	// 自底向上计算
 	for i := 2; i <= n; i++ {
-		dp[i] = dp[i-1] + dp[i-2]
+		dpi := dp0 + dp1
+		dp0, dp1 = dp1, dpi
 	}
-	return dp[n]
+	return dp1
 }
 
 //leetcode submit region end(Prohibit modification and deletion)
