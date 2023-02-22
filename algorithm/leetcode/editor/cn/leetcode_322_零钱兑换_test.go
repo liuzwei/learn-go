@@ -18,7 +18,7 @@ func Test_coinChange(t *testing.T) {
 				coins:  []int{2},
 				amount: 3,
 			},
-			want: 3,
+			want: -1,
 		},
 	}
 	for _, tt := range tests {

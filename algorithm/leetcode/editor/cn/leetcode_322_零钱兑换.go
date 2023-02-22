@@ -33,8 +33,9 @@ func dp(coins []int, amount int) int {
 	}
 	if res == math.MaxInt {
 		memo[amount] = -1
+	} else {
+		memo[amount] = res
 	}
-	memo[amount] = res
 	return memo[amount]
 }
 
