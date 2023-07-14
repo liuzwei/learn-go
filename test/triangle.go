@@ -1,4 +1,4 @@
-package test1
+package test
 
 type Triangle struct {
 	A, B, C float32

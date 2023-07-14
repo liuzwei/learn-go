@@ -36,7 +36,7 @@
 > # 使用%+v打印一个结构体
 > student is {Name:小米 Age:8}
 > # 使用%#v打印一个结构体
-> student is test1.Student{Name:"小米", Age:8}
+> student is test.Student{Name:"小米", Age:8}
 > ```
 
 ## 2.基本类型
@@ -74,14 +74,14 @@
 ```go
 import (
 	"fmt"
-	_ "learn-go/test1" 
+	_ "learn-go/test" 
 )
 
 // 主入口函数
 func main() {
     fmt.Println("3.主函数")
     // # command-line-arguments
-    //.\main.go:11:2: undefined: test1
+    //.\main.go:11:2: undefined: test
     test1.SayHello()
 }
 ```

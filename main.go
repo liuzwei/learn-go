@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"learn-go/algorithm"
-	"learn-go/test1"
+	"learn-go/test"
 )
 
 // 声明一个加法函数
@@ -22,8 +22,8 @@ func main() {
 	fmt.Println(r)
 }
 func main3() {
-	//test1.PrintIntAddress()
-	//test1.PrintStringAddress()
+	//test.PrintIntAddress()
+	//test.PrintStringAddress()
 	ary := []int{1, 2, -2147483648}
 	algorithm.ThirdMax(ary)
 
@@ -32,14 +32,14 @@ func main3() {
 	d := Add(1, 2)
 	fmt.Println(d)
 
-	var shape test1.Shape = test1.Rectangle{A: 1.0, B: 2.0}
-	rect, ok := shape.(test1.Rectangle)
+	var shape test.Shape = test.Rectangle{A: 1.0, B: 2.0}
+	rect, ok := shape.(test.Rectangle)
 	if ok {
 		fmt.Println("shape perimeter ", rect.Perimeter(), "area is ", rect.Area())
 	} else {
-		fmt.Println("shape.(test1.Rectangle) not ok!")
+		fmt.Println("shape.(test.Rectangle) not ok!")
 	}
-	var shape2 test1.Shape = test1.Triangle{A: 3, B: 4, C: 5}
+	var shape2 test.Shape = test.Triangle{A: 3, B: 4, C: 5}
 	fmt.Println("shape2 perimeter ", shape2.Perimeter(), "area is ", shape2.Area())
 
 	table := map[int]int{}
@@ -50,8 +50,8 @@ func main3() {
 func main2() {
 	fmt.Println("2.主函数")
 	// # command-line-arguments
-	//.\main.go:11:2: undefined: test1
-	//test1.SayHello()
+	//.\main.go:11:2: undefined: test
+	//test.SayHello()
 	//var s int = int(math.Max(10, 30))
 
 	// 声明变量
@@ -154,7 +154,7 @@ func printSomething() {
 	fmt.Printf("%v\n", name)
 	fmt.Printf("%+v\n", name)
 	// 打印一个学生信息
-	student := test1.Student{Name: "小米", Age: 8}
+	student := test.Student{Name: "小米", Age: 8}
 	fmt.Printf("student is %v\n", student)
 	fmt.Printf("student is %+v\n", student)
 	fmt.Printf("student is %#v\n", student)

@@ -1,4 +1,4 @@
-package test1
+package test
 
 type Shape interface {
 	// Perimeter 计算周长
