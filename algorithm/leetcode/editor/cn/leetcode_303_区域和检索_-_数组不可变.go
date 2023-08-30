@@ -1,11 +1,11 @@
 package cn
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
 type NumArray struct {
 	preNums []int
 }
 
-func Constructor(nums []int) NumArray {
+func Constructor3(nums []int) NumArray {
 	nr := NumArray{
 		preNums: make([]int, len(nums)+1),
 	}
