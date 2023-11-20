@@ -5,12 +5,12 @@ type MyQueue struct {
 	stack1, stack2 []int
 }
 
-func Constructor() MyQueue {
-	return MyQueue{
-		stack1: make([]int, 0),
-		stack2: make([]int, 0),
-	}
-}
+//func Constructor() MyQueue {
+//	return MyQueue{
+//		stack1: make([]int, 0),
+//		stack2: make([]int, 0),
+//	}
+//}
 
 func (this *MyQueue) Push(x int) {
 	// 向stack1中压入数据
