@@ -36,6 +36,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_234_回文链表.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/doc/content/leetcode_234_回文链表.md" />
+              <option name="frontendQuestionId" value="leetcode.cn234" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_234_回文链表.go" />
+              <option name="titleSlug" value="palindrome-linked-list" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_322_零钱兑换.go">
           <value>
             <LeetcodeEditor>
@@ -44,6 +55,105 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_322_零钱兑换.go" />
               <option name="titleSlug" value="coin-change" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_496_下一个更大元素 I.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/doc/content/leetcode_496_下一个更大元素 I.md" />
+              <option name="frontendQuestionId" value="leetcode.cn496" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_496_下一个更大元素 I.go" />
+              <option name="titleSlug" value="next-greater-element-i" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_589_N 叉树的前序遍历.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/doc/content/leetcode_589_N 叉树的前序遍历.md" />
+              <option name="frontendQuestionId" value="leetcode.cn589" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_589_N 叉树的前序遍历.go" />
+              <option name="titleSlug" value="n-ary-tree-preorder-traversal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_590_N 叉树的后序遍历.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/doc/content/leetcode_590_N 叉树的后序遍历.md" />
+              <option name="frontendQuestionId" value="leetcode.cn590" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_590_N 叉树的后序遍历.go" />
+              <option name="titleSlug" value="n-ary-tree-postorder-traversal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_682_棒球比赛.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/doc/content/leetcode_682_棒球比赛.md" />
+              <option name="frontendQuestionId" value="leetcode.cn682" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_682_棒球比赛.go" />
+              <option name="titleSlug" value="baseball-game" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_844_比较含退格的字符串.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/doc/content/leetcode_844_比较含退格的字符串.md" />
+              <option name="frontendQuestionId" value="leetcode.cn844" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_844_比较含退格的字符串.go" />
+              <option name="titleSlug" value="backspace-string-compare" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_面试题 01.01_判定字符是否唯一.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/doc/content/leetcode_面试题 01.01_判定字符是否唯一.md" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 01.01" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_面试题 01.01_判定字符是否唯一.go" />
+              <option name="titleSlug" value="is-unique-lcci" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_面试题 01.02_判定是否互为字符重排.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/doc/content/leetcode_面试题 01.02_判定是否互为字符重排.md" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 01.02" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_面试题 01.02_判定是否互为字符重排.go" />
+              <option name="titleSlug" value="check-permutation-lcci" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_面试题 01.03_URL化.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/doc/content/leetcode_面试题 01.03_URL化.md" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 01.03" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_面试题 01.03_URL化.go" />
+              <option name="titleSlug" value="string-to-url-lcci" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_面试题 01.04_回文排列.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/doc/content/leetcode_面试题 01.04_回文排列.md" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 01.04" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_面试题 01.04_回文排列.go" />
+              <option name="titleSlug" value="palindrome-permutation-lcci" />
             </LeetcodeEditor>
           </value>
         </entry>
