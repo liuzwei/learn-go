@@ -157,6 +157,39 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_面试题 01.05_一次编辑.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/doc/content/leetcode_面试题 01.05_一次编辑.md" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 01.05" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_面试题 01.05_一次编辑.go" />
+              <option name="titleSlug" value="one-away-lcci" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_面试题 01.06_字符串压缩.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/doc/content/leetcode_面试题 01.06_字符串压缩.md" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 01.06" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_面试题 01.06_字符串压缩.go" />
+              <option name="titleSlug" value="compress-string-lcci" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_面试题 01.07_旋转矩阵.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/doc/content/leetcode_面试题 01.07_旋转矩阵.md" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 01.07" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/algorithm/leetcode/editor/cn/leetcode_面试题 01.07_旋转矩阵.go" />
+              <option name="titleSlug" value="rotate-matrix-lcci" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
